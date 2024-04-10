@@ -1,7 +1,8 @@
 import React from 'react'
 import Button from '../components/Button'
+import ShoeCard from '../components/ShoeCard'
 import { arrowRight } from '../assets/icons'
-import { statistics } from '../constants'
+import { shoes, statistics } from '../constants'
 import { bigShoe1 } from '../assets/images'
 
 function Hero() {
@@ -29,6 +30,18 @@ function Hero() {
       </div>
       <div className='relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-hero bg-cover bg-center bg-primary'>
         <img src={bigShoe1} alt="shoe collection" width={600} height={500} className="object-contain relative z-10"/>
+        <div>
+          {shoes.map((shoe) =>(
+              <div key={shoe}>
+                <ShoeCard 
+                imgURL={shoe}
+                changeBigShoeImg={()=>{}}
+                bigShoeImg=""/>
+              </div>
+            ))
+
+          }
+        </div>
       </div>
 
     </section>
