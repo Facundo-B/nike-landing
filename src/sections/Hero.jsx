@@ -35,7 +35,7 @@ function Hero() {
         <img src={bigShoeImg} alt="shoe collection" width={600} height={500} className="object-contain relative z-10" />
         <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] max-sm:px-6'>
           {shoes.map((shoe) => (
-            <div key={shoe}>
+            <div key={shoe.thumbnail}>
               <ShoeCard
                 imgURL={shoe}
                 changeBigShoeImg={(shoe) => {
