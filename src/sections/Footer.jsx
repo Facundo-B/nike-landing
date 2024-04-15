@@ -11,11 +11,11 @@ const Footer = () => {
           <a href="/"><img src={footerLogo} alt="Nike" className='w-[150px] h-[46px] m-0' /></a>
           <p className='mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm'>
             Get shoes ready for the new term at your nearest Nike store. Find
-            Your perfect Size In Store. Get Rewards
+            Your perfect Size In Store. Get Rewards.
           </p>
           <div className='flex items-center gap-6 mt-8'>
             {socialMedia.map((icon) => (
-              <div key={icon.alt} className='flex justify-center items-center w-12 h-12 bg-white rounded-full'>
+              <div key={icon.alt} className='flex justify-center items-center w-12 h-12 bg-white rounded-full cursor-pointer'>
                 <img src={icon.src} alt={icon.alt} width={24} height={24} />
               </div>
             ))}
